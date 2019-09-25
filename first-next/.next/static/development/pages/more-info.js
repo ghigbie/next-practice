@@ -63,7 +63,7 @@ var MoreInfo = function MoreInfo() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmore-info&absolutePagePath=%2FUsers%2Fgeorgehigbie%2Fnext%2Ffirst-next%2Fpages%2Fmore-info.jsx ***!
   \*********************************************************************************************************************************************/
@@ -86,5 +86,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=more-info.js.map
