@@ -116,6 +116,12 @@ const Index = () => __jsx("div", {
   __self: undefined
 }, "Yo!");
 
+Index.getInitialProps = async () => {
+  const urlRequest = 'https://jsonplaceholder.typicode.com/todos/';
+  console.log("GET INITIAL PROPS CALLED");
+  return {};
+};
+
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),

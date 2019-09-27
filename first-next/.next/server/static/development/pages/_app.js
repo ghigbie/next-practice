@@ -2244,13 +2244,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_3___default.a {
       Component,
       pageProps
     } = this.props;
-    return __jsx("fragment", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
-    }, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23
