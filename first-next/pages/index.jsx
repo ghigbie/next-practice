@@ -1,8 +1,14 @@
 import axios from 'axios';
 
-const Index = ({posts}) => (
+const Index = ({ posts }) => (
     <div>
-    Yo! {posts[0].userId}
+        <ul>
+        {posts.map( post => (
+            <li key={post.id}>
+                {post.title}
+            </li>))
+        }
+        </ul>
     </div>
 );
 

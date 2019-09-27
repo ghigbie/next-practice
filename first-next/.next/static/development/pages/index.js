@@ -4837,7 +4837,22 @@ var Index = function Index(_ref) {
       lineNumber: 4
     },
     __self: this
-  }, "Yo! ", posts[0].userId);
+  }, __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, posts.map(function (post) {
+    return __jsx("li", {
+      key: post.id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, post.title);
+  })));
 };
 
 Index.getInitialProps =

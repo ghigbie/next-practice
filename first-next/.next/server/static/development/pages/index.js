@@ -119,7 +119,20 @@ const Index = ({
     lineNumber: 4
   },
   __self: undefined
-}, "Yo! ", posts[0].userId);
+}, __jsx("ul", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, posts.map(post => __jsx("li", {
+  key: post.id,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, post.title))));
 
 Index.getInitialProps = async () => {
   const urlRequest = 'https://jsonplaceholder.typicode.com/todos/';
