@@ -1,13 +1,19 @@
-const Index = () => (
+import axios from 'axios';
+
+const Index = ({posts}) => (
     <div>
-    Yo!
+    Yo! {posts[0].userId}
     </div>
 );
 
 Index.getInitialProps = async () => {
     const urlRequest = 'https://jsonplaceholder.typicode.com/todos/';
-    console.log("GET INITIAL PROPS CALLED")
-    return {};
+    const res = await axios.get(urlRequest);
+    const {data} = await res;
+    console.log(data);
+    return {
+        posts: data
+    };
 }
 
 export default Index;

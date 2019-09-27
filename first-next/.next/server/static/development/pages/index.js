@@ -104,22 +104,33 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/georgehigbie/next/first-next/pages/index.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-const Index = () => __jsx("div", {
+
+const Index = ({
+  posts
+}) => __jsx("div", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 2
+    lineNumber: 4
   },
   __self: undefined
-}, "Yo!");
+}, "Yo! ", posts[0].userId);
 
 Index.getInitialProps = async () => {
   const urlRequest = 'https://jsonplaceholder.typicode.com/todos/';
-  console.log("GET INITIAL PROPS CALLED");
-  return {};
+  const res = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(urlRequest);
+  const {
+    data
+  } = await res;
+  console.log(data);
+  return {
+    posts: data
+  };
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -135,6 +146,17 @@ Index.getInitialProps = async () => {
 
 module.exports = __webpack_require__(/*! /Users/georgehigbie/next/first-next/pages/index.jsx */"./pages/index.jsx");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 
