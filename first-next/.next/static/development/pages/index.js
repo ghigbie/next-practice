@@ -12040,6 +12040,7 @@ var Index = function Index(_ref) {
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: "/post/?id=".concat(post.id),
+      as: "/p/".concat(post.id),
       __source: {
         fileName: _jsxFileName,
         lineNumber: 9
@@ -12094,7 +12095,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fgeorgehigbie%2Fnext%2Ffirst-next%2Fpages%2Findex.jsx ***!
   \********************************************************************************************************************************/
@@ -12117,5 +12118,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

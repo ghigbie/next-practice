@@ -1,11 +1,12 @@
 import axios from 'axios';
+import Comment from './../components/Comment';
 
 const Post = ({ id, comments }) => (
     <div>
         <h1>You are looking a post # {id}</h1>        
         <ul>
         { comments.map( comment => (
-            <li>{comment.body}</li>
+            <Comment key={comment.id} {...comment}/>
         ))}
         </ul>
     </div>

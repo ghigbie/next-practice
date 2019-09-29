@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1833,6 +1833,7 @@ const Index = ({
   __self: undefined
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   href: `/post/?id=${post.id}`,
+  as: `/p/${post.id}`,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 9
@@ -1862,7 +1863,7 @@ Index.getInitialProps = async () => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/index.jsx ***!
   \*******************************/
