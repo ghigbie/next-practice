@@ -4,7 +4,7 @@ const Post = ({ id, comments }) => (
     <div>
         <h1>You are looking a post # {id}</h1>        
         <ul>
-        { props.comments.map( comment => (
+        { comments.map( comment => (
             <li>{comment.body}</li>
         ))}
         </ul>
